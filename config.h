@@ -26,7 +26,7 @@ static const char *const autostart[] = {
 	"st", NULL,
 	"dunst", NULL,
 	"fcitx5", NULL,
-	"/home/tienp/dotfiles/suckless/scripts/low_battery_warning.sh", NULL,
+	// "/home/tienp/dotfiles/suckless/scripts/low_battery_warning.sh", NULL,
 	NULL /* terminate */
 };
 
@@ -103,7 +103,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_x,      quit,           {0} },
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("~/dotfiles/suckless/scripts/script_launcher.sh") },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("~/dotfiles/suckless/scripts/lock_screen.sh") },
+	{ Mod4Mask,                     XK_l,      spawn,          SHCMD("~/dotfiles/suckless/scripts/lock_screen.sh") },
   { 0, XF86XK_MonBrightnessUp, spawn, SHCMD("~/dotfiles/suckless/scripts/adjust_brightness.sh +") },
   { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("~/dotfiles/suckless/scripts/adjust_brightness.sh -") },
   { 0, XF86XK_AudioMute, spawn, SHCMD("~/dotfiles/suckless/scripts/adjust_volume.sh 0") },
